@@ -1,12 +1,19 @@
+/* Основное */
+
 :root {
     --my-dark-blue: #0D307D;
     --my-light-blue: #0D8EB0;
+    --my-green: #B1D809;
+    --my-yellow: #F7D90F;
+    --my-red: #F3590D;
     --font-white: #fff;
   }
 
 *{
     font-family: "arial";
 }
+
+/* Блоки */
 
 body{
     margin: 0%;
@@ -15,29 +22,15 @@ body{
 header{
     background-color: var(--my-dark-blue);
     height: 55px;
-    padding-left: 40px;
+    padding-left: 35px;
+    cursor: default;
 }
 
 main{
     margin: 20px;
 }
 
-.container-link{
-    padding-top: 20px;
-}
-
-.header-link{
-    color: var(--font-white);
-    text-decoration: none;
-    font-size: larger;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.header-link:hover{
-    color: var(--my-light-blue);
-    /* font-weight: bold; */
-}
+/* Элементы */
 
 .bold{
     transition: 100ms;
@@ -57,4 +50,29 @@ button:hover{
     transition: 100ms;
     cursor: pointer;
     background-color: var(--my-light-blue);
+}
+
+/* Header */
+
+.container-link{
+    padding-top: 18px;
+}
+
+.header-link{
+    color: var(--font-white);
+    text-decoration: none;
+    font-size: larger;
+    margin-left: 13px;
+    margin-right: 10px;
+}
+
+.header-link:hover{
+    color: var(--my-light-blue);
+}
+
+.vr{
+    display: inline;
+    height: 40px; 
+    width: 0px; 
+    border-left: 3px solid var(--font-white);
 }
