@@ -1,0 +1,60 @@
+:root {
+    --my-dark-blue: #0D307D;
+    --my-light-blue: #0D8EB0;
+    --font-white: #fff;
+  }
+
+*{
+    font-family: "arial";
+}
+
+body{
+    margin: 0%;
+}
+
+header{
+    background-color: var(--my-dark-blue);
+    height: 55px;
+    padding-left: 40px;
+}
+
+main{
+    margin: 20px;
+}
+
+.container-link{
+    padding-top: 20px;
+}
+
+.header-link{
+    color: var(--font-white);
+    text-decoration: none;
+    font-size: larger;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header-link:hover{
+    color: var(--my-light-blue);
+    /* font-weight: bold; */
+}
+
+.bold{
+    transition: 100ms;
+    font-weight:bolder
+}
+
+button{
+    background-color: var(--my-dark-blue);
+    color: var(--font-white);
+    font-size: medium;
+    border-radius: 19px;
+    padding: 10px;
+    border: 0;
+}
+
+button:hover{
+    transition: 100ms;
+    cursor: pointer;
+    background-color: var(--my-light-blue);
+}
