@@ -29,13 +29,6 @@ body{
     margin: 0%;
 }
 
-header{
-    background-color: var(--my-dark-blue);
-    height: 55px;
-    padding-left: 35px;
-    cursor: default;
-}
-
 main{
     margin: 20px;
 }
@@ -63,9 +56,24 @@ button:hover{
 }
 
 /* Header */
+header{
+    background-color: var(--my-dark-blue);
+    height: 55px;
+    padding-left: 35px;
+    cursor: default;
+    position: relative;
+}
+
+header:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: "";
+}
 
 .container-link{
-    padding-top: 18px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .header-link{
