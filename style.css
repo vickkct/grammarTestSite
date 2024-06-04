@@ -7,11 +7,21 @@
     --my-yellow: #F7D90F;
     --my-red: #F3590D;
     --font-white: #fff;
-  }
+}
 
 *{
-    font-family: "arial";
+    font-family: "inter", Arial, Helvetica, sans-serif;
 }
+
+/* Наверное оно зачем то нужно
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+} */
 
 /* Блоки */
 
@@ -140,7 +150,6 @@ button:hover{
 .start-test-btn{
     /* float: right; */
     display: inline;
-    margin-right: 30px;
 }
 
 .item-settings{
