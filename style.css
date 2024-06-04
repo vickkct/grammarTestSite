@@ -155,13 +155,19 @@ header:before {
     margin-bottom: 13px;
 }
 
-.start-test-btn{
-    /* float: right; */
-    display: inline;
+.settings-div{
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .item-settings{
     display: inline;
-    width: auto;
-    margin-right: 20px;
+}
+
+.count-word-btn{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    padding: 0px;
 }

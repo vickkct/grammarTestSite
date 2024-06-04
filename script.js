@@ -20,7 +20,7 @@ const minusCountWordSettingsBtn = document.getElementById('minus-word-btn');
 const counterWordSettings = document.getElementById('counter-word-settings-value');
 
 plusCountWordSettingsBtn.addEventListener('click', () => {
-    if(countWordSettings<100)
+    if(countWordSettings<95)
         countWordSettings+=5;
     counterWordSettings.innerHTML = countWordSettings;
 });
