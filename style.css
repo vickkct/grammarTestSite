@@ -34,7 +34,7 @@ main{
 
 .bold{
     transition: 100ms;
-    font-weight:bolder
+    font-weight: bolder
 }
 
 button{
@@ -42,7 +42,7 @@ button{
     color: var(--font-white);
     font-size: medium;
     border-radius: 19px;
-    padding: 10px;
+    padding: 10px 15px 10px 15px;
     border: 0;
 }
 
@@ -75,4 +75,21 @@ button:hover{
     height: 40px; 
     width: 0px; 
     border-left: 3px solid var(--font-white);
+}
+
+/* Rules */
+
+.rule-div{
+    border-radius: 10px;
+    background-color: lightgrey;
+    border-style: solid;
+    border-color: lightgray;
+    margin-bottom: 15px;
+    padding: 0px 10px;
+}
+
+.rule-div:hover{
+    transition: 150ms;
+    border-color: var(--my-dark-blue);
+    border-style: solid;
 }
