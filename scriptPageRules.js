@@ -19,7 +19,7 @@ document.getElementById("exit-rule-btn").addEventListener('click', closeRule);
 function openRule(event){
     mainListRules.classList.toggle("hidden");
     mainRule.classList.remove("hidden");
-    divTextRule.innerHTML = "Новый текст правила"
+    divTextRule.innerHTML = dataRules["rule2"];
 }
 function closeRule(event){
     mainRule.classList.toggle("hidden");
