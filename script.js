@@ -30,3 +30,9 @@ minusCountWordSettingsBtn.addEventListener('click', () => {
     countWordSettings-=5;
     counterWordSettings.innerHTML = countWordSettings;
 });
+
+const startTestBtn = document.getElementById('start-test-btn');
+const mainStartTest = document.getElementById('start-test-block')
+startTestBtn.addEventListener('click', () => {
+    mainStartTest.classList.toggle('hidden');
+});
