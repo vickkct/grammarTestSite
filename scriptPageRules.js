@@ -1,20 +1,29 @@
-var dataRules;
 readTextFile(rulesJson, function(text){
     dataRules = JSON.parse(text);
-    updateHuleNames();
+    updateRuleNames();
 });
 
-const ruleDivs = document.querySelectorAll(".rule-div")
-    const ruleHs = document.querySelectorAll(".rule-h2")
+var numberRule = 0;
 
+const ruleDivs = document.querySelectorAll(".rule-div")
+const ruleHs = document.querySelectorAll(".rule-h2")
+
+function updateRuleNames(){
+    for (let i = 0; i < ruleHs.length; i++) {
+        ruleHs[i].innerHTML = dataRules[i]["ruleName"];
+    }
+}
+
+var dataRules;
+
+addNumberRule();
 ruleDivs.forEach( function(el){
     el.addEventListener('click', openRule);
 }
 )
-
-function updateHuleNames(){
-    for (let i = 0; i < ruleHs.length; i++) {
-        ruleHs[i].innerHTML = dataRules[i]["ruleName"];
+function addNumberRule(){
+    for (let i = 0; i < ruleDivs.length; i++) {
+        ruleDivs[i].addEventListener('click', () => {numberRule = i; console.log(i)});
     }
 }
 
@@ -23,13 +32,11 @@ const mainRule = document.getElementById("rule-block")
 const divTextRule = document.getElementById("rule-text-div")
 document.getElementById("exit-rule-btn").addEventListener('click', closeRule);
 
-var numberRule = 0;
-
 function openRule(event){
     mainListRules.classList.toggle("hidden");
     mainRule.classList.remove("hidden");
-    console.log(dataRules[0])
-    divTextRule.innerHTML = dataRules[0]["ruleText"];
+    console.log(dataRules[numberRule])
+    divTextRule.innerHTML = dataRules[numberRule]["ruleText"];
 }
 function closeRule(event){
     mainRule.classList.toggle("hidden");
