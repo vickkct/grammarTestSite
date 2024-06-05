@@ -116,6 +116,10 @@ header:before {
     border-style: solid;
 }
 
+.rule-text-div{
+    margin-bottom: 20px;
+}
+
 /* Tests */
 
 
@@ -175,3 +179,4 @@ header:before {
     height: 25px;
     padding: 0px;
 }
+
