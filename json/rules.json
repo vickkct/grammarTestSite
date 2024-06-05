@@ -1,4 +1,10 @@
+[
 {
-    "rule1": "Это первое правило",
-    "rule2": "<div style='background-color: #999'>тут тоже правило<br>Только по другому</div>"
+    "ruleName": "первое правило",
+    "ruleText": "Это первое правило"
+},
+{
+    "ruleName": "второе правило",
+    "ruleText": "<div style='background-color: #999'>тут тоже правило<br>Только по другому</div>"
 }
+]
