@@ -7,8 +7,13 @@ ruleDivs.forEach( function(el){
     el.addEventListener('click', openRule);
 }
 )
+document.getElementById("exit-rule-btn").addEventListener('click', closeRule);
 
 function openRule(event){
     mainListRules.classList.toggle("hidden");
     mainRule.classList.remove("hidden");
+}
+function closeRule(event){
+    mainRule.classList.toggle("hidden");
+    mainListRules.classList.remove("hidden");
 }
