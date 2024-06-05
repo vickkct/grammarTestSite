@@ -51,7 +51,7 @@ function readTextFile(file, callback) {
 
 var data;
 //usage:
-readTextFile("test.json", function(text){
+readTextFile("https://vickkct.github.io/grammarTestSite/json/test.json", function(text){
     data = JSON.parse(text);
     console.log(data);
 });
