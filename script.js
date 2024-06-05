@@ -36,3 +36,22 @@ const mainStartTest = document.getElementById('start-test-block')
 startTestBtn.addEventListener('click', () => {
     mainStartTest.classList.toggle('hidden');
 });
+
+function readTextFile(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function() {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+}
+
+var data;
+//usage:
+readTextFile("test.json", function(text){
+    data = JSON.parse(text);
+    console.log(data);
+});
