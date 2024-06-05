@@ -1,3 +1,6 @@
+let testJson = "https://vickkct.github.io/grammarTestSite/json/test.json";
+let popularWordsJson = "https://vickkct.github.io/grammarTestSite/json/popularWords.json";
+
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -11,8 +14,9 @@ function readTextFile(file, callback) {
 }
 
 var data;
+
 //usage:
-readTextFile("https://vickkct.github.io/grammarTestSite/json/test.json", function(text){
+readTextFile(testJson, function(text){
     data = JSON.parse(text);
     console.log(data);
 });
