@@ -1,15 +1,22 @@
 var dataRules;
 readTextFile(rulesJson, function(text){
     dataRules = JSON.parse(text);
-    console.log(dataRules);
+    updateHuleNames();
 });
 
 const ruleDivs = document.querySelectorAll(".rule-div")
+    const ruleHs = document.querySelectorAll(".rule-h2")
 
 ruleDivs.forEach( function(el){
     el.addEventListener('click', openRule);
 }
 )
+
+function updateHuleNames(){
+    for (let i = 0; i < ruleHs.length; i++) {
+        ruleHs[i].innerHTML = dataRules[i]["ruleName"];
+    }
+}
 
 const mainListRules = document.getElementById("list-rules-block")
 const mainRule = document.getElementById("rule-block")
