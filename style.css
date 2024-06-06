@@ -180,3 +180,23 @@ header:before {
     padding: 0px;
 }
 
+/* Train */
+
+.center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 550px;
+    background-color: cornflowerblue;
+  }
+
+  .inline{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .word-h1{
+    margin: 10px 0px;
+  }
