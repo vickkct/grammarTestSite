@@ -1,5 +1,5 @@
 const testJson = "https://vickkct.github.io/grammarTestSite/json/test.json";
-const popularWordsJson = "https://vickkct.github.io/grammarTestSite/json/popularWords.json";
+const dictonaryJson = "https://vickkct.github.io/grammarTestSite/json/dictionary.json";
 const rulesJson = "https://vickkct.github.io/grammarTestSite/json/rules.json";
 
 function readTextFile(file, callback) {
