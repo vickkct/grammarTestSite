@@ -1,0 +1,34 @@
+[
+    {
+        "category name": "Популярные",
+        "words": [
+            {
+                "correct": "слово"
+            }
+        ]
+    }, 
+    {
+        "category name": "2 категория",
+        "words": [
+
+        ]
+    }, 
+    {
+        "category name": "3 категория",
+        "words": [
+
+        ]
+    }, 
+    {
+        "category name": "4 категория",
+        "words": [
+
+        ]
+    }, 
+    {
+        "category name": "5 категория",
+        "words": [
+
+        ]
+    }
+]
